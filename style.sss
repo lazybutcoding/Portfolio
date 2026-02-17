@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+
+header {
+  background: #111;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+}
+
+.logo {
+  color: #00adb5;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  height: 90vh;
+  background: linear-gradient(to right, #00adb5, #007b83);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: white;
+  color: #007b83;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* SECTIONS */
+
+.section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.gray {
+  background: #f4f4f4;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* SKILLS */
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skills-container span {
+  background: #00adb5;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+/* LIST */
+
+.list {
+  list-style: none;
+}
+
+.list li {
+  margin: 10px 0;
+}
+
+/* FOOTER */
+
+footer {
+  background: #111;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .nav-links {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background: #111;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
